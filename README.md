@@ -1,4 +1,4 @@
-# django restframeworkでapiを作る=>dockerfileを使う場合
+# DRFでapiを作る=>dockerfileを使う場合
 
 
 

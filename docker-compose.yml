@@ -1,0 +1,23 @@
+#docker-composeのバージョンを指定
+version: "3"
+
+services:
+    app:
+        #コンテナ名
+        container_name: quickstart_ct
+        #ビルド指定
+        build: .
+        #ディレクトリマウント(ホスト側からファイルを配置したり編集したりできるように)
+        volumes:
+            - .:/code
+        #ポート指定    
+        ports:
+            - "8000:8000"  
+        #コンテナ起動時に実行するコマンド  
+        command: >          
+
+            sh -c "python manage.py migrate &&   #マイグレーションする
+                   python manage.py createsuperuser --email admin@example.com --username admin  #superuserを作成
+                   python manage.py runserver 0.0.0.0:8000 #サーバを起動
+            "
+      

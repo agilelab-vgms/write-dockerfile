@@ -59,7 +59,12 @@ _sqlparse==0.4.3_
 ![image](https://user-images.githubusercontent.com/110072224/228450540-b60d033b-bfbc-424f-bd17-27b39b878e14.png)
 
 ### docker-compose.ymlを作成する
-![image](https://user-images.githubusercontent.com/110072224/228450364-339138e4-58ea-4285-b1ff-438a6f9f6982.png)
+
+### migrate
+**$ python manage.py migrate**
+
+### superuserを作る
+**$ python manage.py createsuperuser --email admin@example.com --username admin**
 
 ### Dockerfileからdocker imageをビルドする
 

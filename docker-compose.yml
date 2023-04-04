@@ -14,10 +14,6 @@ services:
         ports:
             - "8000:8000"  
         #コンテナ起動時に実行するコマンド  
-        command: >          
-
-            sh -c "python manage.py migrate &&   #マイグレーションする
-                   python manage.py createsuperuser --email admin@example.com --username admin  #superuserを作成
-                   python manage.py runserver 0.0.0.0:8000 #サーバを起動
-            "
+        command: python3 manage.py runserver 0.0.0.0:8000
+            
       

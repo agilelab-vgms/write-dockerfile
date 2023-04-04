@@ -14,6 +14,6 @@ services:
         ports:
             - "8000:8000"  
         #コンテナ起動時に実行するコマンド  
-        command: python manage.py runserver 0.0.0.0:8000 #サーバを起動
+        command: python3 manage.py runserver 0.0.0.0:8000
             
       

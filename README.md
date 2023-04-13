@@ -60,6 +60,8 @@ _sqlparse==0.4.3_
 
 ### docker-compose.ymlを作成する
 
+![image](https://user-images.githubusercontent.com/110072224/231688996-3f8bfd38-472f-410d-ad09-7fd9cb67d883.png)
+
 ### migrate
 **$ python manage.py migrate**
 
